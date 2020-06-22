@@ -1,0 +1,185 @@
+body {
+  margin:0px;
+
+}
+.wrapper {
+    max-width: 100%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-gap: 0px;
+}
+.wrapper > * {
+    border: 2px solid white;
+    background-color: white;
+    padding: 10px;
+    grid-column: col-start / span 12;
+}
+h1 {
+  float: left;
+  margin: 0px;
+  color: aliceblue;
+  color-interpolation-filters: blue;
+}
+h4{
+  color: #063986;
+  margin: 4px;
+}
+.main-head {
+  border-bottom: 0px;
+  background-color:#063986;
+  border-color:#063986 ;
+}
+.form {
+  float: right;
+  padding-top: 0px;
+  border-top: 0px;
+  background-color:#063986;
+  border-color: #063986;
+}
+
+#Buscar {
+  padding-left: 15px;
+  width: 230px;
+  height: 25px;
+  border-radius: 25px;
+  border: 2px;
+  margin-top: 0px; 
+  -webkit-appearance: none;
+}
+#Login {
+  width: 69px;
+  height: 24px;
+  border: 0px;
+  margin-left: 10px;
+  -webkit-appearance: none;
+}
+
+.cuadro {
+  border: 1px solid rgba(245, 246, 248, 0.377);
+  width: 100%;
+  background-color: rgba(245, 246, 248, 0.377);
+}
+ 
+aside article{
+  border: 1px solid rgb(250, 250, 250);
+  border-radius: 10px;
+  margin-bottom: 4px;
+  margin-right: 0px;
+  background-color: rgb(205, 213, 231);
+}
+iframe {
+  width: 100%;
+  height: 400px;
+}
+
+aside article iframe {
+  width: 30%;
+  height: 100%;
+  margin: 5px;
+  float: left;
+}
+table{
+  width: 38%;
+  margin: 10px;
+  margin-right: 40px;
+  float: left;
+  
+}
+table:last-child {
+  margin-right: 0px;
+  
+}
+
+caption{
+  border: 1px solid black;
+  border-radius:  15px;
+  border-color: #063986;
+  background-color: whitesmoke;
+}
+img{
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: 4px;
+}
+
+.main-footer{
+  padding: 0px;
+  background-color:#063986;
+  border-color: #063986;
+}
+footer a {
+  color: white;
+}
+
+@media (min-width: 500px) {
+  .content {
+    grid-column: col-start / span 8;
+  }
+  .side {
+    grid-column: col-start 9 / span 4;
+  }
+  aside article iframe {
+    width: 94%;
+    height: 100%;
+    margin: 5px;
+    
+  }
+  
+  
+}
+
+@media (min-width: 800px) {
+  .main-head {
+    grid-column: col-start  / span 7;
+    border-right:0px;
+    /* border-bottom:2px solid #f08c00; */
+    border-color: #063986;
+  }
+  .content {
+    grid-column: col-start  / span 7;
+  }
+  .side {
+    grid-column : col-start 8 / span 5;
+  }
+  .form {
+    grid-column : col-start 8 / span 5;
+    margin: 0px;
+    border-top: 2px solid #f08c00 ;
+    border-left: 0px;
+    padding: 10px;
+    border-color: #063986;
+  }
+  #Buscar {
+    padding-left: 15px;
+    width: 80%;
+    height: 30px;
+    border-radius: 25px;
+    border: 2px;
+    margin-top: 5px;
+  }
+  #Login {
+    float: right;
+    
+    width: 13%;
+    height: 25px;
+    border: 0px;
+    margin-top: 7px;
+    margin-left: 15px;
+    
+  }
+  aside article iframe {
+    width: 30%;
+    height: 100%;
+    margin: 5px;
+    float: left;
+  }
+  table{
+    width: 20%;
+    margin: 10px;
+    margin-right: 40px;
+    float: left;
+    
+  }
+}    

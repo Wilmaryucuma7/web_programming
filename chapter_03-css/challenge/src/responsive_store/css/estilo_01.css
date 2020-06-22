@@ -1,0 +1,67 @@
+body {
+	margin: 0px;
+
+}
+
+
+/* cabezote */
+.main-head {
+	background-color: #11799E;
+	font-family: Arial;
+	padding: 0px;
+	margin: 0px;
+}
+.main-head h1 {
+	margin: 0px;
+	padding: 10px;
+	font-size: 250%;
+	text-align: middle;
+}
+
+/* menu horizontal */
+.main-nav {
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: #1B4E56;
+}
+.main-nav li {
+  float: left;
+  border-right: 1px solid white;
+}
+.main-nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+}
+.main-nav li:last-child {
+  border-right: none;
+}
+
+/* maquetación productos y banners */
+
+
+article {
+	clear: both;
+	/*border-bottom: dashed gray 1px;*/
+}
+article img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+	margin-left: 10px;
+}
+
+/* pie de página */
+.main-footer {
+	clear: both;
+	background-color: #11799E;
+	margin: 0px;
+	padding: 5px;
+	border-top: 2px solid black;
+	font-family: Arial;
+}
